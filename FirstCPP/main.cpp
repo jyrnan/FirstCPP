@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "Stack.hpp"
+#include "TestTemplate.hpp"
 
 
 
@@ -38,6 +39,21 @@ private:
     PtrType _pmf;
 };
 
+template<typename OutStream>
+class PrintIt {
+public:
+    PrintIt(OutStream &os):_os(os){}
+    
+    template<typename elemType>
+    void print(const elemType &elem, char delimiter = '\n'){
+        _os << elem << delimiter;
+        throw 45;
+    }
+private:
+    OutStream& _os;
+    
+};
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -47,10 +63,44 @@ int main(int argc, const char * argv[]) {
     bool b = lt10(9);
     cout <<  b << endl;
     
+    Stack stack;
+    cout << stack.size() << endl;
+    
+    TestTmeplate<int> temp;
+    temp.print();
+    
+    do {
+        PrintIt<ostream> to_standard_out(cout);
+        to_standard_out.print("Hello world");
+    }
+    catch {
+        cout << errc << endl;
+    }
+    
     
     return 0;
 }
 
+template<typename  elemType>
+class lessThanCopy {
+public:
+            lessThanCopy(const elemType &val): _val(val) {}
+    bool    operator()(elemType &val) const {
+        return val < _val;
+    }
+    void    val(elemType &newval) {
+        _val = newval;
+    }
+    elemType val() {return _val;}
+private:
+    elemType _val;
+};
+
+template<typename elemType, typename BinaryComp>
+class StringLen {
+public:
+    bool operator()(const elemType &s1, const elemType &s2) {return BinaryComp(s1, s2);}
+};
 
 
 
