@@ -48,7 +48,6 @@ int main(int argc, const char * argv[]) {
     
     set< int, less<int> > s;
     
-    __tree
     
     return 0;
 }

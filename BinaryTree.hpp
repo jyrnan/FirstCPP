@@ -13,11 +13,15 @@
 template< typename  elemType>
 class BinaryTree;
 
+//BTNode
 template<typename valType>
 class BTNode {
     friend BinaryTree<valType>;
     
 public:
+    BTNode( const valType &val );
+    void insert_value( const valType &val );
+    
 private:
     valType _val;
     int     _cnt;
@@ -25,6 +29,7 @@ private:
     BTNode  *_rchild;
 };
 
+//BinaryTree
 template <typename elemType>
 class BinaryTree {
 public:
@@ -35,6 +40,9 @@ public:
     
     bool empty() {return _root = 0; }
     void clear();
+    
+    void insert( const elemType &elem);
+
 private:
     BTNode<elemType> *_root;
     
