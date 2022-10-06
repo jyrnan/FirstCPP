@@ -7,7 +7,8 @@
 
 #include <iostream>
 #include "Stack.hpp"
-
+#include <set>
+#include <__tree>
 
 
 class LessThan {
@@ -43,10 +44,11 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    LessThan lt10(10); //初始化，并设置内部的基值为10
-    bool b = lt10(9);
-    cout <<  b << endl;
+    //测试 rb_tree
     
+    set< int, less<int> > s;
+    
+    __tree
     
     return 0;
 }
