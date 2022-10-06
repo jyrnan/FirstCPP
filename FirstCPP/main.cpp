@@ -9,7 +9,11 @@
 #include "Stack.hpp"
 #include <set>
 #include <__tree>
+#include <string>
 
+#include "BinaryTree.hpp"
+
+using namespace::std;
 
 class LessThan {
 public:
@@ -44,9 +48,18 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    //测试 rb_tree
     
-    set< int, less<int> > s;
+    BinaryTree< int > bt;
+//    bt.insert("Piglet");
+//    bt.insert("Eeyore");
+//    bt.insert("roo");
+//    bt.insert("Tigger");
+//    bt.insert("Chris");
+//    bt.insert("Pooh");
+//    bt.insert("Kanga");
+//
+//    cout << "Preoder traveral: \n";
+////    bt.preorder(cout);
     
     
     return 0;

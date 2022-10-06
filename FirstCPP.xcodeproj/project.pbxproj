@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2094D4328E2FA94009B1E91 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2094D4128E2FA94009B1E91 /* Stack.cpp */; };
-		D26947D228E6C38400AF1623 /* num_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D26947D028E6C38400AF1623 /* num_sequence.cpp */; };
-		D2A16CD028EEA632003A2B05 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A16CCE28EEA632003A2B05 /* BinaryTree.cpp */; };
+		D2A16CD428EEDA29003A2B05 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A16CCE28EEA632003A2B05 /* BinaryTree.cpp */; };
+		D2A16CD528EEDA29003A2B05 /* BinaryTree.hpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A16CCF28EEA632003A2B05 /* BinaryTree.hpp */; };
 		D2F712FD28DEE83400728D44 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2F712FC28DEE83400728D44 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -134,10 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A16CD028EEA632003A2B05 /* BinaryTree.cpp in Sources */,
-				D2094D4328E2FA94009B1E91 /* Stack.cpp in Sources */,
+				D2A16CD428EEDA29003A2B05 /* BinaryTree.cpp in Sources */,
+				D2A16CD528EEDA29003A2B05 /* BinaryTree.hpp in Sources */,
 				D2F712FD28DEE83400728D44 /* main.cpp in Sources */,
-				D26947D228E6C38400AF1623 /* num_sequence.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
