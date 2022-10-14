@@ -48,6 +48,8 @@ public:
     void print(const elemType &elem, char delimiter = '\n'){
         _os << elem << delimiter;
         throw 45;
+        
+        
     }
 private:
     OutStream& _os;
@@ -69,14 +71,13 @@ int main(int argc, const char * argv[]) {
     TestTmeplate<int> temp;
     temp.print();
     
-    do {
+    try {
         PrintIt<ostream> to_standard_out(cout);
         to_standard_out.print("Hello world");
     }
-    catch {
-        cout << errc << endl;
+    catch (int num) {
+        cout << num << "错误出现了" << endl;
     }
-    
     
     return 0;
 }
@@ -102,5 +103,20 @@ public:
     bool operator()(const elemType &s1, const elemType &s2) {return BinaryComp(s1, s2);}
 };
 
+struct Demo {
+    int a, b;
+    
+    void increase(int x) {
+        a += x;
+    }
+};
 
+class MyClass {
+    public:
+    int a, b;
+    
+    private:
+    void empty() {
 
+    }
+}
