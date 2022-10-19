@@ -112,11 +112,16 @@ struct Demo {
 };
 
 class MyClass {
-    public:
+public:
     int a, b;
     
-    private:
+private:
     void empty() {
 
     }
-}
+};
+
+class MyClass2 {
+public:
+    
+};

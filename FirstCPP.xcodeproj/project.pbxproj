@@ -10,6 +10,7 @@
 		D2094D4328E2FA94009B1E91 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2094D4128E2FA94009B1E91 /* Stack.cpp */; };
 		D26947D228E6C38400AF1623 /* num_sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D26947D028E6C38400AF1623 /* num_sequence.cpp */; };
 		D2A16CD828EEDCF1003A2B05 /* TestTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A16CD628EEDCF1003A2B05 /* TestTemplate.cpp */; };
+		D2F0560E28EF04E000BEE2BA /* iterator_overflow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2F0560D28EF04E000BEE2BA /* iterator_overflow.cpp */; };
 		D2F712FD28DEE83400728D44 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2F712FC28DEE83400728D44 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		D26947D128E6C38400AF1623 /* num_sequence.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = num_sequence.hpp; sourceTree = "<group>"; };
 		D2A16CD628EEDCF1003A2B05 /* TestTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestTemplate.cpp; sourceTree = "<group>"; };
 		D2A16CD728EEDCF1003A2B05 /* TestTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestTemplate.hpp; sourceTree = "<group>"; };
+		D2F0560D28EF04E000BEE2BA /* iterator_overflow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iterator_overflow.cpp; sourceTree = "<group>"; };
 		D2F712F928DEE83400728D44 /* FirstCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F712FC28DEE83400728D44 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +52,7 @@
 		D2F712F028DEE83400728D44 = {
 			isa = PBXGroup;
 			children = (
+				D2F0560D28EF04E000BEE2BA /* iterator_overflow.cpp */,
 				D2A16CD628EEDCF1003A2B05 /* TestTemplate.cpp */,
 				D2A16CD728EEDCF1003A2B05 /* TestTemplate.hpp */,
 				D26947D028E6C38400AF1623 /* num_sequence.cpp */,
@@ -138,6 +141,7 @@
 				D2A16CD828EEDCF1003A2B05 /* TestTemplate.cpp in Sources */,
 				D2F712FD28DEE83400728D44 /* main.cpp in Sources */,
 				D26947D228E6C38400AF1623 /* num_sequence.cpp in Sources */,
+				D2F0560E28EF04E000BEE2BA /* iterator_overflow.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
