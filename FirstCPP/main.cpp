@@ -11,31 +11,35 @@
 #include "StringDemo.hpp"
 #include <memory>
 
-void printString(const StringDemo& string) {
-    std::cout << string.m_buffer << std::endl;
-}
+class Entity {
+public:
+    Entity() {
+        std::cout << "Construct Entity" << std::endl;
+    }
+    
+    ~Entity() {
+        std::cout << "Destruct Entity" << std::endl;
+    }
+};
 
-template<typename T>
-void printcopy(T value) {
-    std::cout << value << std::endl;
-}
-
-template<>
-void printcopy(std::string value) {
-    std::cout << "string: " << value << std::endl;
-}
+template<class T>
+class ScopedPtr {
+private:
+    T* m_ptr;
+public:
+    ScopedPtr(T* ptr) : m_ptr(ptr) {
+        
+    }
+    ~ScopedPtr() {
+        delete m_ptr;
+    }
+};
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
-    printcopy<int>(5);
-    std::string str("hello string2");
-    printcopy(str);
-
-    
-    unique_ptr<StringDemo> u_ptr = make_unique<StringDemo>(StringDemo("Unique StringDemo"));
-    printString(*u_ptr);
+    ScopedPtr e = new Entity();
     
     return 0;
 }
